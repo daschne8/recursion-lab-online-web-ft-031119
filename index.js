@@ -1,8 +1,8 @@
 function printString(string){
-  if (string.length > 0) {
+  if (string.length > 1) {
     console.log(string[0])
     printString(string[1])
   } else {
-    return true
+    console.log(string[0])
   }
 }
