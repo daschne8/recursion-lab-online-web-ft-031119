@@ -5,5 +5,3 @@ function printString(string){
     return string[0]
   }
 }
-
-
