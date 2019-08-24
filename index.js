@@ -24,3 +24,10 @@ function isPalindrome(string){
     return false
   }
 }
+
+function addUpTo(arr,index){
+  if(index === 0){
+    return arr[0]
+  }
+  return arr[0] + addUpTo(arr.slice(1,arr.length),index-1)
+}
