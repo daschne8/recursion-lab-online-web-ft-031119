@@ -31,3 +31,15 @@ function addUpTo(arr,index){
   }
   return arr[0] + addUpTo(arr.slice(1,arr.length),index-1)
 }
+
+function maxOf(array){
+  if(array.length > 1){
+    if(array[0] >= array[1]){
+      return maxOf(array.slice(0,1).concat(array.slice(2,array.length) ))
+    }else{
+      return maxOf(array.slice(1))
+    }
+  }else{
+    return array[0]
+  }
+}
