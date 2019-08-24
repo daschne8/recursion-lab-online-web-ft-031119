@@ -128,14 +128,3 @@ try {
     });
   });
 }
-
-function includesNumber(array,num){
-  if(array.length > 0){
-    if(array[0] === num){
-      return true
-    }else{
-      return includesNumber(array.slice(1),num)
-    }
-  }
-  return false
-}
